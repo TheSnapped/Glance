@@ -1,0 +1,9 @@
+# Link the C runtime statically so glance.exe doesn't need VCRUNTIME140.dll.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
+
+# ffmpeg-sys-next links against the prebuilt shared FFmpeg in third_party and
+# needs libclang (LLVM) to generate its bindings.
+[env]
+FFMPEG_DIR = { value = "third_party/ffmpeg-n9.0-latest-win64-lgpl-shared-9.0", relative = true }
+LIBCLANG_PATH = 'C:/Program Files/LLVM/bin'
