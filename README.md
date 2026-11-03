@@ -8,6 +8,14 @@ any video file, and keeps out of the way with a minimal overlay that hides while
 
 ![Glance playing a video](assets/screenshot.png)
 
+## Why I made it
+
+I made Glance to replace the default Windows media player, which I find slow to open
+and badly designed. I wanted a player that shows the video the moment you double-click
+a file, stays out of the way while you watch, and puts the things I actually use
+(seeking with previews, skipping to the next video in the folder, speed, volume) right
+where I expect them. Glance is that player, and it can be set as the Windows default.
+
 ## Download
 
 Get **`Glance-<version>-windows-x64.zip`** from the [Releases page](https://github.com/TheSnapped/Glance/releases/latest),
